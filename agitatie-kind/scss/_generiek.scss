@@ -1,0 +1,61 @@
+.pagina-brede-knop {
+	padding: 6em 0;
+	text-align: center;
+	background-color: $donkergrijs;
+	display: block;
+	transition: background-color 0.2s ease-in-out;
+	span {
+		padding: .3em .5em;
+		font-size: 2em;
+		font-weigth: bold;
+		background-color: $wittig;
+		display: inline-block;
+		color: $zwart;
+		font-weight: bold;
+		position: relative;
+		&::before {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 0;
+			height: 0;
+			border-bottom: 5px solid $donkergrijs;
+			transition: 0.25s linear;
+			bottom: -5px;
+			left:0;
+		}
+	}
+	&:hover {
+		text-decoration: none;
+		background-color: $hoofdkleur;
+		span {
+			&::before {
+				width: 100%;
+				transition: 0.4s ease-out 0.4s;
+			}
+		}
+	}
+}
+
+.blok-in-art-lijst {
+	flex-basis: 50%;
+	margin-bottom: 30px;
+	margin-right: 15px;
+	margin-left: 15px;
+	flex-grow: 1;
+	min-width: 240px;
+	padding-right: 115px;
+	h2 {
+		margin-top: 0;
+	}
+}
+
+.socials-list {
+	font-size: 2em;
+	a {
+		margin-right: .5em;
+		&:hover {
+			color: darken($hoofdkleur, 10%);
+		}
+	}
+}

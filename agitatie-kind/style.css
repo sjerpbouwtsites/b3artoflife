@@ -1,0 +1,625 @@
+/*
+ Theme Name:   Agitatie child
+ Theme URI:    http://sjerpbouwtsites.nl
+ Description:  Het kind thema waarin aanpassingen voor specifiek deze site zijn gedaan.
+ Author:       Sjerp van Wouden
+ Author URI:   http://sjerpbouwtsites.nl
+ Template:     agitatie
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  agitatie
+*/
+/* line 1, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-wit {
+  color: #fff;
+}
+
+/* line 4, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-wittig {
+  color: #f5f5f5;
+}
+
+/* line 7, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-lichtgrijs {
+  color: #CAC8C8;
+}
+
+/* line 10, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-grijs {
+  color: #666;
+}
+
+/* line 13, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-donkergrijs {
+  color: #211f1f;
+}
+
+/* line 16, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-zwart {
+  color: #252525;
+}
+
+/* line 19, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-hoofdkleur {
+  color: #C82449;
+}
+
+/* line 22, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-zijkleur {
+  color: #F9E6B1;
+}
+
+/* line 25, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-accentkleur {
+  color: #B5DEE8;
+}
+
+/* line 28, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-hoofdkleur-donker {
+  color: #b22041;
+}
+
+/* line 31, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-zijkleur-donker {
+  color: #f7de99;
+}
+
+/* line 34, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.tekst-accentkleur-donker {
+  color: #a2d5e2;
+}
+
+/* line 38, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-wit {
+  background-color: #fff;
+}
+
+/* line 41, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-wittig {
+  background-color: #f5f5f5;
+}
+
+/* line 44, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-lichtgrijs {
+  background-color: #CAC8C8;
+}
+
+/* line 47, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-grijs {
+  background-color: #666;
+}
+
+/* line 50, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-donkergrijs {
+  background-color: #211f1f;
+}
+
+/* line 53, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-zwart {
+  background-color: #252525;
+}
+
+/* line 56, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-hoofdkleur {
+  background-color: #C82449;
+}
+
+/* line 59, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-zijkleur {
+  background-color: #F9E6B1;
+}
+
+/* line 62, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-accentkleur {
+  background-color: #B5DEE8;
+}
+
+/* line 65, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-hoofdkleur-donker {
+  background-color: #b22041;
+}
+
+/* line 68, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-zijkleur-donker {
+  background-color: #f7de99;
+}
+
+/* line 71, ../agitatie/scss/inst/kleur/_zet-klassen.scss */
+.achtergrond-accentkleur-donker {
+  background-color: #a2d5e2;
+}
+
+/*voorbeeld in code bovenstaande mixin
+
+div::after {
+    @include pseudo;
+    top: -1em; left: -1em;
+    width: 1em; height: 1em;
+}
+*/
+/* voorbeeld in code bovenstaande mixin
+
+div {
+    @include responsive-ratio(16,9);
+}
+
+*/
+/*voorbeeld van gebruik:
+
+input,
+textarea {
+    @include input-placeholder {
+        color: $grey;
+    }
+}
+*/
+/*voorbeeld in gebruik:
+
+a {
+  color: gray;
+  @include transition(color .3s ease);
+  &:hover {
+    color: black;
+  }
+}
+
+*/
+/*gebruik
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+*/
+/*gebruik:
+.button {
+  @include border-radius(5px);
+}
+
+
+*/
+/* line 3, scss/_footer.scss */
+.vw-footer-logo img {
+  max-width: 75%;
+}
+
+/* body {
+	font-family: $broodletter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $kopletter;
+} */
+/* line 9, scss/_generiek-teksten.scss */
+.bericht-tekst {
+  font-size: 1.4em;
+}
+
+/* line 11, scss/_generiek-teksten.scss */
+.bericht-tekst p, .bericht-tekst span {
+  line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+  /* line 11, scss/_generiek-teksten.scss */
+  .bericht-tekst p, .bericht-tekst span {
+    line-height: 1.45;
+  }
+}
+
+/* line 1, scss/_generiek.scss */
+.pagina-brede-knop {
+  padding: 6em 0;
+  text-align: center;
+  background-color: #211f1f;
+  display: block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* line 7, scss/_generiek.scss */
+.pagina-brede-knop span {
+  padding: .3em .5em;
+  font-size: 2em;
+  font-weigth: bold;
+  background-color: #f5f5f5;
+  display: inline-block;
+  color: #252525;
+  font-weight: bold;
+  position: relative;
+}
+
+/* line 16, scss/_generiek.scss */
+.pagina-brede-knop span::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid #211f1f;
+  transition: 0.25s linear;
+  bottom: -5px;
+  left: 0;
+}
+
+/* line 28, scss/_generiek.scss */
+.pagina-brede-knop:hover {
+  text-decoration: none;
+  background-color: #C82424;
+}
+
+/* line 32, scss/_generiek.scss */
+.pagina-brede-knop:hover span::before {
+  width: 100%;
+  transition: 0.4s ease-out 0.4s;
+}
+
+/* line 40, scss/_generiek.scss */
+.blok-in-art-lijst {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  min-width: 240px;
+  padding-right: 115px;
+}
+
+/* line 48, scss/_generiek.scss */
+.blok-in-art-lijst h2 {
+  margin-top: 0;
+}
+
+/* line 53, scss/_generiek.scss */
+.socials-list {
+  font-size: 2em;
+}
+
+/* line 55, scss/_generiek.scss */
+.socials-list a {
+  margin-right: .5em;
+}
+
+/* line 57, scss/_generiek.scss */
+.socials-list a:hover {
+  color: #9d1c1c;
+}
+
+#stek-kop .stek-kop-links {
+  flex-basis: 90px;
+}
+
+
+/* line 3, scss/_header.scss */
+.stek-kop-links, .stek-kop-rechts {
+  font-size: .8em;
+}
+
+/* line 1, scss/_voorpagina.scss */
+.voorpagina {
+  background-image: url("http://wouter.local/wp-content/uploads/2018/03/wouter-teerhuis-achtergrond.jpg");
+  background-size: 100%;
+  background-position: left top;
+}
+
+/* line 5, scss/_voorpagina.scss */
+.voorpagina.marginveld.veel {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 12, scss/_voorpagina.scss */
+.voorpagina h1 {
+  margin-top: 0;
+}
+
+/* line 15, scss/_voorpagina.scss */
+.voorpagina ~ #stek-voet {
+  margin-top: 0;
+}
+
+/* line 22, scss/_voorpagina.scss */
+.voorpagina .verpakking-klein {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  left: calc(-50% + 760px);
+}
+
+/* line 25, scss/_voorpagina.scss */
+.voorpagina .verpakking-klein ~ .verpakking-klein {
+  padding-top: 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 32, scss/_voorpagina.scss */
+  .voorpagina.marginveld.veel {
+    padding: 0;
+  }
+  /* line 36, scss/_voorpagina.scss */
+  .voorpagina .verpakking-klein {
+    width: 100%;
+    left: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 43, scss/_voorpagina.scss */
+  .voorpagina .verpakking-klein {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 48, scss/_voorpagina.scss */
+.voorpagina .art-lijst {
+  margin-bottom: -15px;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+/* line 52, scss/_voorpagina.scss */
+.voorpagina .art-lijst .art-c {
+  -ms-flex-preferred-size: calc(33% - 15px);
+      flex-basis: calc(33% - 15px);
+  margin-bottom: 15px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  min-width: 180px;
+}
+
+@media (max-width: 900px) {
+  /* line 52, scss/_voorpagina.scss */
+  .voorpagina .art-lijst .art-c {
+    margin-bottom: 2em;
+  }
+  /* line 61, scss/_voorpagina.scss */
+  .voorpagina .art-lijst .art-c header {
+    margin-bottom: .5em;
+    line-height: 1;
+  }
+  /* line 65, scss/_voorpagina.scss */
+  .voorpagina .art-lijst .art-c h3 {
+    display: inline-block;
+  }
+  /* line 69, scss/_voorpagina.scss */
+  .voorpagina .art-lijst .art-c time::before {
+    content: " - ";
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 52, scss/_voorpagina.scss */
+  .voorpagina .art-lijst .art-c {
+    -webkit-flex: 1 1 auto;
+  }
+}
+
+/* line 77, scss/_voorpagina.scss */
+.voorpagina .art-lijst .art-c img {
+  height: 110px;
+}
+
+/* line 83, scss/_voorpagina.scss */
+.voorpagina .knoppendoos {
+  padding: 20px 20px 10px 20px;
+  background-color: #C82424;
+}
+
+/* line 4, scss/_singular.scss */
+.art-meta {
+  padding: 20px;
+  background-color: #EDEDED;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+/* line 13, scss/_singular.scss */
+.art-meta time {
+  color: #252525;
+  margin-right: 20px;
+}
+
+/* line 19, scss/_singular.scss */
+.art-meta div.sharedaddy h3.sd-title {
+  display: none;
+}
+
+/* line 24, scss/_singular.scss */
+.art-meta .sd-content ul {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0 !important;
+}
+
+/* line 29, scss/_singular.scss */
+.art-meta .sd-content ul li {
+  margin-bottom: 0 !important;
+  opacity: 0.8;
+}
+
+/* line 32, scss/_singular.scss */
+.art-meta .sd-content ul li:hover {
+  opacity: 1;
+}
+
+/* line 40, scss/_singular.scss */
+.art-meta .sd-social-icon .sd-content ul li a.sd-button.share-more {
+  padding: 4px 8px 5px 5px;
+  position: relative;
+  top: 0;
+  margin-left: 4px;
+  opacity: 0.8;
+  border-radius: 0;
+  border: 0;
+}
+
+/* line 48, scss/_singular.scss */
+.art-meta .sd-social-icon .sd-content ul li a.sd-button.share-more:hover {
+  opacity: 1;
+  background-color: #f1f1f1;
+}
+
+/* line 53, scss/_singular.scss */
+.art-meta .sd-social-icon .sd-content ul li a.sd-button.share-more::before {
+  position: relative;
+  top: 3px;
+}
+
+/* line 2, scss/_intake.scss */
+.intake .wpcf7-form {
+  max-width: 330px;
+  background-color: #E7E0E0;
+  padding: 20px;
+}
+
+/* line 7, scss/_intake.scss */
+.intake .neg-mar {
+  margin: 0 -20px;
+}
+
+/* line 10, scss/_intake.scss */
+.intake .flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+/* line 14, scss/_intake.scss */
+.intake .flex .wpcf7 {
+  margin: 0 20px;
+}
+
+/* line 17, scss/_intake.scss */
+.intake .flex .intake-rechts {
+  margin: 0 20px;
+  -ms-flex-preferred-size: calc(100% - 450px);
+      flex-basis: calc(100% - 450px);
+}
+
+/* line 22, scss/_intake.scss */
+.intake input, .intake textarea {
+  border: 0;
+  width: 100%;
+  text-indent: 10px;
+  max-width: 330px;
+}
+
+/* line 28, scss/_intake.scss */
+.intake h1, .intake .wpcf7 p:first-of-type {
+  margin-top: 0;
+}
+
+/* line 31, scss/_intake.scss */
+.intake .art-meta {
+  display: none;
+}
+
+/* line 2, scss/_contact.scss */
+.wpcf7-form input::-webkit-input-placeholder,
+.wpcf7-form textarea::-webkit-input-placeholder,
+.wpcf7-form textarea,
+.wpcf7-form input {
+  font-family: "Merriweather", sans-serif;
+}
+.wpcf7-form input::-moz-placeholder,
+.wpcf7-form textarea::-moz-placeholder,
+.wpcf7-form textarea,
+.wpcf7-form input {
+  font-family: "Merriweather", sans-serif;
+}
+.wpcf7-form input:-ms-input-placeholder,
+.wpcf7-form textarea:-ms-input-placeholder,
+.wpcf7-form textarea,
+.wpcf7-form input {
+  font-family: "Merriweather", sans-serif;
+}
+.wpcf7-form input::placeholder,
+.wpcf7-form textarea::placeholder,
+.wpcf7-form textarea,
+.wpcf7-form input {
+  font-family: "Merriweather", sans-serif;
+}
+
+/* line 8, scss/_contact.scss */
+.wpcf7-form label input,
+.wpcf7-form label textarea {
+  font-size: .8em;
+}
+
+/* line 13, scss/_contact.scss */
+.ctf7-binnen {
+  margin-bottom: -30px;
+}
+
+/* line 15, scss/_contact.scss */
+.ctf7-binnen > * {
+  margin-bottom: 30px;
+}
+
+/* line 18, scss/_contact.scss */
+.ctf7-binnen label {
+  width: 100%;
+  display: block;
+}
+
+/* line 22, scss/_contact.scss */
+.ctf7-binnen textarea {
+  max-width: 100%;
+}
+
+/* line 25, scss/_contact.scss */
+.ctf7-binnen input {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* line 29, scss/_contact.scss */
+.ctf7-binnen br {
+  display: none;
+}
+
+/* line 33, scss/_contact.scss */
+.wpcf7-response-output {
+  margin-top: 40px;
+}
+
+/* line 36, scss/_contact.scss */
+.screen-reader-response {
+  display: none;
+}
+
+/* line 41, scss/_contact.scss */
+.bericht-tekst .wpcf7-form {
+  margin-top: 40px;
+  font-size: 1.25em;
+}
+
+/* line 44, scss/_contact.scss */
+.bericht-tekst .wpcf7-form input.wpcf7-submit {
+  height: auto;
+}
+
+/* line 50, scss/_contact.scss */
+.contact .art-meta {
+  display: none;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,34 @@
+.intake {
+	.wpcf7-form {
+		max-width: 330px;
+		background-color: #E7E0E0;
+		padding: 20px;
+	}
+	.neg-mar {
+		margin: 0 -20px;
+	}
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		.wpcf7 {
+			margin: 0 20px;
+		}
+		.intake-rechts {
+			margin: 0 20px;
+			flex-basis: calc(100% - 450px);
+		}
+	}
+	input, textarea {
+		border: 0;
+		width: 100%;
+		text-indent: 10px;
+		max-width: 330px;
+	}
+	h1, .wpcf7 p:first-of-type {
+		margin-top: 0
+	}
+	.art-meta {
+		display: none;
+	}
+}
